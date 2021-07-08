@@ -40,15 +40,15 @@ import base64
 from subprocess import PIPE
 
 import emscripten
-from tools import shared, system_libs, client_mods, js_optimizer, jsrun
-from tools import colored_logger, diagnostics, building
-from tools.shared import unsuffixed, unsuffixed_basename, WINDOWS, safe_move, run_process, asbytes, read_and_preprocess, exit_with_error, DEBUG
-from tools.response_file import substitute_response_files
-from tools.minimal_runtime_shell import generate_minimal_runtime_html
-import tools.line_endings
-from tools.toolchain_profiler import ToolchainProfiler
-from tools import js_manipulation
-from tools import wasm2c
+from emscripten.tools import shared, system_libs, client_mods, js_optimizer, jsrun
+from emscripten.tools import colored_logger, diagnostics, building
+from emscripten.tools.shared import unsuffixed, unsuffixed_basename, WINDOWS, safe_move, run_process, asbytes, read_and_preprocess, exit_with_error, DEBUG
+from emscripten.tools.response_file import substitute_response_files
+from emscripten.tools.minimal_runtime_shell import generate_minimal_runtime_html
+import emscripten.tools.line_endings
+from emscripten.tools.toolchain_profiler import ToolchainProfiler
+from emscripten.tools import js_manipulation
+from emscripten.tools import wasm2c
 
 if __name__ == '__main__':
   ToolchainProfiler.record_process_start()
