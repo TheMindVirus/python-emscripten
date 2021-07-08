@@ -1,0 +1,1 @@
+1:D:/Unreal/UnrealEngine/Engine/Platforms/HTML5/Build/emsdk/emsdk-1.39.18/upstream/bin
